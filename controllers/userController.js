@@ -102,7 +102,7 @@ const userController = {
         Math.random().toString(36).substring(2, 15) +
         Math.random().toString(36).substring(2, 15);
 
-      const link = `https://coruscating-gingersnap-023f63.netlify.app/reset-password/${randomString}`;
+      const link = `https://benevolent-froyo-2aa393.netlify.app/reset-password/${randomString}`;
 
       user.resetToken = randomString;
       const updateUser = await userModel.findByIdAndUpdate(user._id, user);
